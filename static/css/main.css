@@ -1,0 +1,353 @@
+body{
+padding: 0;
+margin: 0;
+}
+ul{
+list-style: none; 
+}
+.header_nav{
+  display: flex;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.ailivlogo{
+  margin-top: 1rem;
+  width: 100px;
+}
+.shoppingcart{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.navigatemenu{
+  width: 2.5rem;
+  cursor: pointer;
+}
+.sub-title {
+  display: flex;
+}
+.sub-title_text{
+  background-color: rgb(255, 246, 218);
+  margin-bottom: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.sub-title_text img{
+  margin-top: -2rem;
+  height: 18rem;
+}
+.sub-title_text h1{
+  color: rgb(173, 54, 94);
+font-size: 2rem;
+margin-top: 0.5rem;
+margin-bottom: 0.3rem;
+}
+.sub-title_text p{
+  font-size: 16px;
+  line-height: 25px;
+  margin-top: 0.5rem;
+}
+.sub-title_text p:last-child{
+  padding-bottom: 2rem;
+}
+.header_contact_list{
+  display: flex; 
+  width: fit-content;
+  padding-inline-start: 0rem;
+  margin: auto;
+  margin-top: 0.4rem;
+}
+.header_contact_list a,
+.header_contact_list li{
+  text-decoration: none;
+  color: #00372b;
+  font-size: 8px;
+  font-weight: 100;
+  list-style: none;
+  margin-right: 2px;
+  margin-top: 1.25rem;
+}
+
+.dropdownmenu
+{
+  display: flex;
+  visibility: hidden;
+  display: flex;
+  position: absolute;
+  top: 11rem;
+  background-color:white;
+  width: 100%;
+}
+.dropdownmenu_list li
+{
+  font-size: 12px;
+text-align: center;
+margin-bottom: 1.9rem;
+text-transform: uppercase;
+letter-spacing: 1px;
+text-decoration: none;
+}
+.dropdownmenu_list a{
+text-decoration: none;
+color: #009e29;
+}
+
+.sub-title_text img{
+  width: 100%;
+}
+.discover-flowers_text{
+  text-align: center;
+}
+.discover-flowers_text h2{
+  color: #93c683;
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+ }
+ .discover-flowers_text p {
+   margin-top: 5px;
+   padding-left: 1.5rem;
+     padding-right: 1.5rem;
+     
+ }
+.discover-flowers_link{
+  text-align: center;
+  
+}
+.discover-flowers_link p:last-child {
+border: 1px solid #c11462;
+width: fit-content;
+margin:auto;
+padding: 8px 10px;
+border-radius: 8px;
+margin-bottom:8rem;
+}
+.discover-flowers_link a{
+ color: #c11462; 
+ text-decoration: none;
+}
+.discover-flowers_link a:hover{
+color: green;
+}
+.arrowsvg{
+    width: 0.7rem;
+    margin-left: 10px;
+    color: pink;
+  }
+.flower-types_text{}
+.flower-types_text h2{
+  color: #93c683;
+  text-align: center;
+  font-size: 2.0rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.flower-types_text p{
+  text-align: center;
+}
+.flowerinlineupbackground{
+  position: relative;
+}
+.flowerinlineup{
+  text-align: center;
+}
+.flowerinlineup img{
+  position: relative;
+  width: 85%;
+  max-width: 30rem;
+}
+.flowerinlineup a{
+  font-size: 1.5rem;
+  text-align: center;
+  margin: auto;
+  color: #c11462;
+  text-decoration: underline #f2d6e3;
+  transition: 0.3s;
+}
+.flowerinlineup a:hover{
+  text-decoration:  underline #c11462;
+}
+.custom-flower-locations{
+  text-align: center;
+  background-color: #00372b;
+  margin-top: 3rem;
+}
+.custom-flower-locations img{
+  width: 85%;
+  max-width: 30rem;
+  margin-top: -1rem;
+  
+}
+.custom-flower-locations h2{  
+  color: #93c683;
+  text-align: center;
+  font-size: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-top: 1rem;
+}
+.custom-flower-locations p {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  color: #d3f4da;
+
+}
+.custom-flower-locations p:last-child{
+  padding-bottom: 4rem;
+}
+.custom-flower-locations p:last-child a{
+  padding: 6px 14px;
+  margin-left: 1rem;
+  border: 1px solid green;
+  border-radius: 8px; 
+  color:#fff8e1;
+  text-decoration: none;
+}
+.custom-flower-locations p:last-child img{
+  width: 1rem;
+}
+.webshop-order_text h2{
+  margin-top: 4rem;
+  font-size: 2rem;
+  text-align: center;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  color: #93c683;
+}
+.webshop-order_text p{
+  text-align: center;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.webshop_position {
+    margin-bottom: 2rem;
+    position: relative;
+}
+.webshop-order_info{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-60%);
+}
+
+.tarieven{
+  border: 2px solid #c11462;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  padding: 6px 14px;
+  border-radius: 14px;
+}
+
+/* --Footer-- */
+footer{
+  background-color: #00372b;
+}
+.footer_top{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.footer_navigate_list{ 
+  padding:0;
+  padding-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.footer_navigate ul{
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+.footer_navigate_list a{
+  font-size: 0.9rem;
+  color: #fff8e1;
+  text-decoration: none;
+  line-height: 3rem;
+}
+.footer_navigate_list li{
+  margin: auto;
+}
+
+.footer_navigate_list li:after{
+  color: #93c683;
+  content:"-";
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.footer_navigate_list li:last-child:after{
+content: none;
+}
+.footer_contact{
+  margin: auto;
+  text-align: center;
+}
+.footer_contact-list{
+  padding: 0;
+}
+.footer_contact-list li{
+  border: 1px solid #93c683;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 10px 10px 10px 10px;
+  margin: auto;
+  margin-bottom: 0.2rem;
+}
+.footer_contact-list a{
+  text-decoration: none;
+  color:#fff8e1;
+}
+.footer_contact-list span{
+  color: #93c683;
+}
+.footer_bottom{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.footer_copyright{
+  color:#fff8e1;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 1rem;
+}
+.footer_cookies{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer_cookies a{
+  color: #fff8e1 ;
+  font-size: 0.7rem;
+  line-height: 1.7rem;
+  text-decoration: none;
+}
+.footer_made{
+font-size: 0.7rem;
+padding-bottom: 1rem;
+color: #fff8e1;
+}
+.footer_made a{
+  color: #fff8e1;
+}
+.custom-flowers img{
+  width: 100%;
+}
+.custom-flowers{
+}
+/* step 1 -- increase font sizes */
+@media (min-width: 28.5rem) {
+  .header_contact_list a,
+  .header_contact_list li{
+    font-size: 12px;}
+}
+/* step 2 -- flex the page*/
+@media (min-width: 47rem) {
+
+}
+@media (min-width: 62rem) {
+
+}
