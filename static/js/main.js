@@ -55,8 +55,10 @@
       <div class="flowerinlineupbackground">
        <div class="flowerinlineup">
         <img src="${flower.image}"
-        <p><a href="">${flower.title}</a>  ${flower.price}</p>
+        <div>
+        <p><a href="">${flower.title}</a>${flower.price}</p>
        </div>
+        </div>
       </div>
       `
         });
