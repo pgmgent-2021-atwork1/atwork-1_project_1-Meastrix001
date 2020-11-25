@@ -1,7 +1,27 @@
 body{
 padding: 0;
 margin: 0;
+
 }
+.webwrapper{
+  width: 100%;
+  max-width: 93.75rem;
+  margin: auto;
+}
+h2{
+  color: #93c683;
+  font-size: 3rem;
+  width: fit-content;
+  margin: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+/* p{
+  font-size: 1.35rem;
+  width: fit-content;
+  padding-left: 1rem;
+  padding-right: 1rem;
+} */
 ul{
 list-style: none; 
 }
@@ -67,29 +87,29 @@ list-style: none;
 {
   display: flex;
   visibility: hidden;
-  display: flex;
   position: absolute;
   top: 11rem;
   background-color:white;
   width: 100%;
+  right: 0;
  
 }
 .dropdownmenu_list li
 {
   font-size: 12px;
-text-align: center;
-margin-bottom: 1.9rem;
-text-transform: uppercase;
-letter-spacing: 1px;
-text-decoration: none;
+  text-align: center;
+  margin-bottom: 1.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
 }
 .dropdownmenu_list{
   margin: auto;
   padding: 0;
 }
 .dropdownmenu_list a{
-text-decoration: none;
-color: #009e29;
+  text-decoration: none;
+  color: #009e29;
 }
                                                         /* below the navbar */
  .sub-title {
@@ -136,7 +156,6 @@ padding-bottom: 1rem;
   text-align: center;
 }
 .discover-flowers_text h2{
-  color: #93c683;
   font-size: 2.5rem;
   margin-top: 0;
   margin-bottom: 0;
@@ -144,8 +163,10 @@ padding-bottom: 1rem;
  .discover-flowers_text p {
    margin-top: 5px;
    padding-left: 1.5rem;
-     padding-right: 1.5rem;
-     
+   padding-right: 1.5rem;
+   font-size: 1rem;
+   line-height: 1.8rem;
+   color: #00372b;
  }
 .discover-flowers_link{
   text-align: center;
@@ -173,9 +194,8 @@ color: green;
   }
 
                                             /* JS-Discover flower types */
-.flower-types_text{}
+
 .flower-types_text h2{
-  color: #93c683;
   text-align: center;
   font-size: 2.0rem;
   margin-top: 0;
@@ -184,10 +204,11 @@ color: green;
 .flower-types_text p{
   text-align: center;
 }
-.flowerinlineupbackground{
-}
 .flowerinlineup{
   text-align: center;
+  width: 100%;
+  max-width: 30rem;
+  margin: auto;
 }
 .flowersizes-pricing{
   color: black;
@@ -195,9 +216,11 @@ color: green;
 }
 .flowerinlineup img{
   position: relative;
-  width: 85%;
+  width: 100%;
+  height: 25rem;
   max-width: 30rem;
 }
+
 .flowerinlineup a{
   font-size: 1.5rem;
   text-align: center;
@@ -222,7 +245,6 @@ color: green;
   
 }
 .custom-flower-locations h2{  
-  color: #93c683;
   text-align: center;
   font-size: 2rem;
   margin-left: 1.5rem;
@@ -255,7 +277,18 @@ color: green;
   text-align: center;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-  color: #93c683;
+}
+.webshop-order_text2{
+  padding-left: 2rem;
+}
+.webshop-order_text2 h2{
+  margin-top: 4rem;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  text-align: left;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  color: #c11462;
 }
 .webshop-order_text p{
   text-align: center;
@@ -275,12 +308,19 @@ color: green;
   transform: translateY(-60%);
 }
 
-.tarieven{
+.subscription{
   border: 2px solid #c11462;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   padding: 6px 14px;
   border-radius: 14px;
+  margin-bottom: 2rem;
+}
+.tarieven{
+  margin: auto;
+  width: fit-content;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
 }
 
                                                         /* --Footer-- */
@@ -298,7 +338,7 @@ footer{
 .footer_navigate_list{ 
   padding:0;
   padding-top: 3rem;
-  display: blocl;
+  display: block;
   justify-content: space-evenly;
   flex-wrap: wrap;
   text-align: center;
@@ -317,36 +357,23 @@ footer{
   transition: 0.25s;
 }
 .footer_navigate_list li{
-  /* margin: auto; */
   width: fit-content;
 }
 .footer_navigate_list a:hover{
   color: #00b62f;
 }
-
-/* .footer_navigate_list li:after{
-  color: #93c683;
-  content:"-";
-  margin: auto;
-  margin-left: 5px;
-}
-.footer_navigate_list li:last-child:after{
-content: none;
-} */
-.footer_contact{
-  margin: auto;
-  text-align: center;
-}
 .footer_contact-list{
   padding: 0;
-display: block;
+  display: block;
+  margin: auto;
+  width: fit-content;
 }
 .footer_contact-list li{
   border: 1px solid #93c683;
   border-radius: 10px;
   width: fit-content;
   padding: 10px 10px 10px 10px;
-  margin: auto;
+  margin-right: 1rem;
   margin-bottom: 0.2rem;
 }
 .footer-dash{
@@ -368,11 +395,13 @@ display: block;
 }
 .footer_copyright{
   color:#fff8e1;
+  margin: auto;
   margin-top: 3rem;
   margin-bottom: 4rem;
   font-size: 0.8rem;
   text-align: center;
   line-height: 1rem;
+  width: fit-content;
 }
 .footer_cookies{
   display: flex;
@@ -384,6 +413,10 @@ display: block;
   font-size: 0.7rem;
   line-height: 1.7rem;
   text-decoration: none;
+  transition: 0.25s;
+}
+.footer_cookies a:hover{
+    color: #00b62f;
 }
 .footer_made{
 font-size: 0.7rem;
@@ -392,12 +425,236 @@ color: #fff8e1;
 }
 .footer_made a{
   color: #fff8e1;
+  transition: 0.25s;
+}
+.footer_made a:hover{
+    color: #00b62f;
 }
 .custom-flowers img{
   width: 100%;
 }
-.custom-flowers{
+/* niet-HomePage CSS */
+.custom-flowers_gepblo,
+.custom-flowers_sezdec{
+  padding-bottom: 2rem;
+  margin-top: 4rem;
 }
+.custom-flowers_gepblo,
+.custom-flowers_sezdec{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff8e1; 
+  align-items: center;
+}
+.custom-flowers_sezdec{
+  background-color: 	#dff4d7;
+}
+.custom-flowers_gepblo img,
+.custom-flowers_sezdec img
+{
+ padding-bottom: 2rem;
+ max-width: 20rem;
+margin-top: -2rem;
+}
+.discover-flowers_textingepblo,
+.discover-flowers_textinsezdec{
+  width: 70%;
+  margin: auto;
+}
+.discover-flowers_textingepblo h2,
+.discover-flowers_textinsezdec h2{
+  color: #c11462;
+  font-size: 4rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.discover-flowers_textinsezdec h2{
+  font-size: 2.2rem;
+}
+.discover-flowers_textingepblo p,
+.discover-flowers_textinsezdec p{
+  line-height: 1.7rem;
+  font-size: 1.2rem;
+}
+.gepblo-quote{
+  font-size: 1.4rem;
+  width: 100%;
+  max-width: 60rem;
+  margin: auto;
+}
+.gepblo-quote p {
+  font-size: 1.4rem;
+  margin-bottom: 4rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.gepblo-quote p:first-child{
+  margin-top: 5rem;
+}
+.gepblo-quote p:last-child{
+  margin-bottom: 8rem;
+}
+.gepblo-examples_images{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.gepblo-examples_images img{
+  width: 20rem;
+  margin-bottom: 1rem;
+}
+.gepblo-examples_text{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.gepblo-examples_text h2{
+  width: fit-content;
+  margin: auto;
+  font-size: 3rem;
+}
+.gepblo-examples_text p{
+  width: fit-content;
+  margin: auto;
+  font-size: 1.35rem;
+  margin-top: 1rem;
+ margin-bottom: 3rem;
+ color: #00372b;
+}
+.gepblo-intressted{
+  margin-top: 3rem;
+
+}
+.gepblo-intressted p{
+  text-align: center;
+  margin: auto;
+  margin-top: 0.8rem;
+  margin-bottom: 2rem;
+}
+.gepblo-intressted p:last-child{
+  margin-bottom: 5rem;
+}
+.gepblo-intressted h2{
+  text-align: center;
+}
+.gepblo-contactform{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #00372b;
+}
+.gepblo-contactform_text{
+  margin-right: 1rem;
+  width: 50%;
+  margin-left: 2rem;
+}
+.gepblo-contactform_text h2{
+  padding-bottom: 3.5rem;
+}
+.gepblo-contactform_text p{
+color: #d3f4d3;
+font-size: 1.1rem;
+}
+.gepblo-contactform_text a{
+  color: #00b62f;
+}
+.gepblo-contactform h2{
+  margin-top: 3rem;
+  font-size: 2.8rem;
+  margin-bottom: 0.8rem;
+}
+.gepblo-contactform_input{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+.gepblo-contactform_input input{
+  width: 100%;
+  padding: 0.9rem;
+  border-radius: 10px;
+  background-color: #93c683;
+}
+.gepblo-contactform_input input:last-child {
+  margin-top: 1rem;
+  width: fit-content;
+  margin-bottom: 1rem;
+  background-color: unset;
+  border: 1px solid #00b62f;
+  color: white;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+.gepblo-contactform_input label {
+  margin-top: 2.2rem;
+  margin-bottom: 0.5rem;
+  color: #d3f4da;
+}
+#text{
+  height: 6rem;
+}
+
+/* seizoens decoratie css */
+.sezdec-block,
+.sezdec-block_kerst {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.sezdec-block img {
+  width: 90%;
+  height: 12rem;
+  margin: auto;
+}
+.sezdec-block p{
+  font-size: 1.2rem;
+}
+.sezdec-block h2{
+  margin: 0;
+}
+.sezdec-block_kerstimg{
+  width: fit-content;
+  margin: auto;
+}
+.sezdec-block_kerst img {
+  display: flex;
+  margin: auto;
+  width: 70%;
+  height: 20rem;
+  margin-bottom: 2rem;
+}
+.forwho-sezdec{
+  text-align: left;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.forwho-sezdec h2{
+  font-size: 2.5rem;
+  padding-left: 0;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  margin:0;
+}
+.forwho-sezdec p,
+.forwho-sezdec li{
+ margin: auto;
+  width: 100%;
+  max-width: 50rem;
+  margin-bottom: 2rem;
+  list-style: disc;
+}
+.forwho-sezdec p{
+  margin-top: 1.5rem;
+  width: fit-content;
+}
+.forwho-sezdec ul{
+  padding-inline-start: 0;
+  margin-left: 4rem;
+}
+/* -------------------------------------------- */
                                                         /* Media querries */
 @media (min-width: 24rem) {
   .footer_contact-list{
@@ -425,23 +682,244 @@ color: #fff8e1;
                            /* 752px */
 @media (min-width: 47rem) {
 .sub-title_text{
+  height: 37rem;
   display: flex;
   flex-direction: row-reverse;
   margin-top: 1.5rem;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  justify-content: space-between;
 }
 
+.custom-flowers{
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding-bottom: 10rem;
+}
+.custom-flowers img{
+  width: 100%;
+  max-width: 31rem;
+}
+.discover-flowers{
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 10rem;
+}
 .sub-title_text img{
   margin: auto;
 }
-.sub-title_img{
-
-}
 .sub-title_about{
-  width: 55%;
+  width: 48%;
+  margin-right: 2rem;
+}
+
+.footer p{
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+.footer a{
+  font-size: 1rem;
+}
+.footer-dash{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.footer_made{
+  display: flex;
+  width: fit-content;
+  margin:auto;
+}
+.footer_made a{
+margin-left: 4px;
+}
+.footer_made p{
+  font-size: 0.9rem;
+}
+.webshop-order_text2 h2{
+  font-size: 4rem;
+  line-height: 4.2rem;
+  width: 19rem;
+}
+.gepblo-examples_images{
+  flex-wrap: wrap;
+  flex-direction: unset;
+  justify-content: center;
+}
+.gepblo-examples_images img{
+  margin: 1rem;
+  height: 15rem;
+  width: 15rem;
+}
+.forwho-sezdec_blocks{
+  display: flex;
+  width: 100%;
+}
+.sezdec-block_kerstimg{
+  display:flex;
+  width: 20rem;
+  justify-content: space-around;
+}
+.sezdec-block_kerstimg img{
+margin: 1rem;
+}
+.forwho-sezdec h2{
+  margin-left: 4rem;
 }
 }
 /* step 2  */ 
-            /* 992 */
+                                    /* 992px */
 @media (min-width: 62rem) {
+  .sub-title_about{
+    margin-left: 4rem;
+  }
+  .sub-title_about p {
+    width: 100%;
+  }
+  .sub-title_about h1{
+    text-align: left;
+    width: 2rem;
+  }
+  
+  .ailivlogo{
+    width: 100px;
+  }
+  .shoppingcart{
+    position:  absolute;
+    right: 0;
+  }
+  .webshop-order{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+  }
+  .webshop-order_text h2{
+    font-size:  3rem;
+  }
+  .webshop-order img{
+    width: 25rem;
+  }
+  .webshop-order li{
+    margin-left: 3rem;
+    line-height: 1.8rem;
+  }
+  .header_contact_list{
+    width: fit-content;
+    margin: auto;
+  }
+  .header_contact_list li,
+  .header_contact_list a{
+    font-size: 1rem;
+  }
+  .header_contact_list a{
+    margin: 2rem;
+  }
+  .custom-flowers_gepblo,
+  .custom-flowers_sezdec{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 6rem;
+  }
+  .custom-flowers_sezdec{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+  .discover-flowers_textingepblo,
+  .discover-flowers_textinsezdec{
+    margin-left: 6rem;
+    margin-right: 2rem;
+  }
+  .discover-flowers_textinsezdec h2{
+    font-size: 4rem;
+  }
+  .custom-flowers_gepblo img,
+  .custom-flowers_sezdec img{
+    margin-top: -1rem;
+    margin-right: 3rem;
+    max-width: 35rem;
+    width: 100%;
+  }
+  .gepblo-contactform{
+    flex-direction: row;
+  }
+  .gepblo-contactform p{
+      color: #d3f4d3;
+  }
+  .gepblo-contactform_input{
+    align-items: flex-start;
+    margin-left: 3rem;
+    width: 50%;
+  } 
+  .gepblo-contactform_input input{
+    width: 100%;
+    max-width: 75rem;
+    margin-right: 10rem;
+  }
+  .gepblo-contactform_input input:last-child{
+    margin-bottom: 4rem;
+  }
 
+}
+                                     /* 1090px */
+@media (min-width: 76.5rem){
+
+  .dropdownmenu{
+    visibility: visible;
+    position: unset;
+   margin: auto;
+   width: 60rem;
+  }
+  .dropdownmenu_list{
+    display: flex; 
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: fit-content;
+    margin: 0;
+  }
+  .dropdownmenu_list li{
+    margin: 0;
+  }
+  .dropdownmenu_list a {
+    margin: 0;
+    margin-left: 1rem;
+  }
+  .navigatemenu{
+    visibility: hidden;
+  }
+  .header_nav section{
+    width: 80rem;
+    margin: auto;
+margin-left: 0;
+margin-right: 6rem;
+  }
+  .flower-types_lineup{
+    display: flex;
+    margin: auto;
+  }
+  .flowerinlineup{
+    margin-right: 1rem;
+  }
+  .flower-Sizes_lineup{
+display: flex;
+margin-bottom: 2rem;
+  }
+}
+@media (min-width: 93.75rem){
+.gepblo-examples_images{
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.gepblo-examples_images img{
+  width: 24%;
+  height: 24%;
+}
+.gepblo-intressted p{
+  font-size: 1.5rem;
+}
 }
