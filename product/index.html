@@ -180,13 +180,13 @@
         <section>
           <div class="dropdownmenu">
             <ul class="dropdownmenu_list">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../dienst/gepersonaliseerd-bloemwerk/index.html">Gepersonaliseerd Bloemwerk</a></li>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="dienst/gepersonaliseerd-bloemwerk/index.html">Gepersonaliseerd Bloemwerk</a></li>
               <li><a href="">TrouwBoeketten</a></li>
-              <li><a href="../dienst/seizoensdecoratie/index.html">Seizonesdecoratie</a></li>
+              <li><a href="dienst/seizoensdecoratie/index.html">Seizoensdecoratie</a></li>
               <li><a href="">Rouwwerk</a></li>
               <li><a href="">Aankleding</a></li>
-              <li> <a href="index.html">WebShop</a></li>
+              <li> <a href="webshop/index.html">WebShop</a></li>
             </ul>
           </div>
         </section>
@@ -208,67 +208,93 @@
         </div>
       </div>
     </nav>
-    <div class="webshop-order">
-      <div class="webshop-order_text2">
-        <h2> Bestel uw boeket via de webshop</h2>
-        <p>Gevarieerd aanbod plukverse handgebonden seizoensboeketten volgens marktaanbod.</p>
+    <div class="js_params-flower">
+    </div>
+     <div class="details-selection">
+       <div class="optionblock">
+       <label for="color">KLEUR</label>
+       <select id="color" required>
+         <option selected disabled value>kueze: kleur</option>
+         <option value>Wit</option>
+         <option value>Gemengd</option>
+       </select>
+       </div>
+       <div class="optionblock">
+        <label for="color">VAAS BIJBESTELLEN
+        </label>
+        <select id="color" required>
+          <option selected value>kueze: Vaas bijbestellen</option>
+          <option value>Ja</option>
+          <option value>Nee</option>
+        </select>
+        </div>
+        <div class="optionblock">
+          <label for="color">BINDWIJZE</label>
+          <select id="color" required>
+            <option selected disabled value>kueze: bindwijze</option>
+            <option value>Kortgebonden stelen</option>
+            <option value>Langgebonden stelen</option>
+          </select>
+        </div>
+         <div class="option-finished">
+          <input type="number" value="1" min="1">
+          <input id="submit" type="submit" value="Toevoegen aan Winkelmandje">
+        </div>  
       </div>
-      <div class="webshop-order_perks">
-        <div class="webshop_position">
-          <img src="../static/media/green-circle.svg">
-          <ul class="webshop-order_info">
-            <li>🗓 Bestellen voor donderdag 16 u</li>
-            <li>🚗 Gratis thuislevering in Beernem</li>
-            <li>⏱ afhaling vrijdag tot zondagmiddag</li>
-            <li>💳 Online betalen met kredietkaart</li>
+
+      <div class="details-preserve">
+        <h2>Hoe een boeket langer bewaren?</h2>
+        <p>Zorg er altijd voor dat je vaas brandschoon is en snijd de stelen van de bloemen onderaan ook best na een viertal dagen eens schuin af met een mesje terwijl je het water ververst. Indien gewenst kan het meegeleverde bloemenvoedsel aan het water toegevoegd worden.
+        </p>
+        <h2>Verzorgingstips in water </h2>
+        <p>Zorg ervoor dat er geen dorre blaadjes in het water terechtkomen , want die geven bacteriën . Gebruik bij voorkeur leidingwater en voeg eventueel een klein druppeltje javel toe .
+        </p>
+        </div>
+  <footer class="footer">
+    <div class="footer_top">
+      <div class="footer_top-half">
+        <div class="footer_navigate">
+          <ul class="footer_navigate_list">
+            <li><a href="dienst/gepersonaliseerd-bloemwerk/index.html">Gepersonaliseerd Bloemwerk</a></li>
+            <p class="footer-dash">-</p>
+            <li><a href="dienst/seizoensdecoratie/index.html">Seizonesdecoratie</a></li>
+            <p class="footer-dash">-</p>
+            <li><a href="">Rouwwerk op maat</a></li>
+            <p class="footer-dash">-</p>
+            <li><a href="">Aankleding op locatie</a></li>
+            <p class="footer-dash">-</p>
+            <li><a href="index.html">WebShop</a></li>
+            <p class="footer-dash">-</p>
+            <li><a href="">Contact</a></li>
           </ul>
         </div>
       </div>
-    </div>
-    <div class="flower-Sizes_lineup">
-    </div>
-    <div class="flower-types_lineup" style="display: none;">
-    </div>
-    <footer class="footer">
-      <div class="footer_top">
-        <div class="footer_top-half">
-          <div class="footer_navigate">
-            <ul class="footer_navigate_list">
-              <li><a href="dienst/gepersonaliseerd-bloemwerk/index.html">Gepersonaliseerd Bloemwerk</a></li>
-              <p class="footer-dash">-</p>
-              <li><a href="dienst/seizoensdecoratie/index.html">Seizonesdecoratie</a></li>
-              <p class="footer-dash">-</p>
-              <li><a href="">Rouwwerk op maat</a></li>
-              <p class="footer-dash">-</p>
-              <li><a href="">Aankleding op locatie</a></li>
-              <p class="footer-dash">-</p>
-              <li><a href="index.html">WebShop</a></li>
-              <p class="footer-dash">-</p>
-              <li><a href="">Contact</a></li>
-            </ul>
-          </div>
-        <div class="footer_contact">
-          <ul class="footer_contact-list">
-            <li><a href="tel:+32474992345"><span>GSM</span> 0474 99 23 45</a></li>
-            <li><a href="mailto:lievecortier@ailiv.be"><span>EMAIL</span> lievecortier@ailiv.be</a></li>
-          </ul>
-        </div>
-          </div>
+      <div class="footer_contact">
+        <ul class="footer_contact-list">
+          <li><a href="tel:+32474992345"><span>GSM</span> 0474 99 23 45</a></li>
+          <li><a href="mailto:lievecortier@ailiv.be"><span>EMAIL</span> lievecortier@ailiv.be</a></li>
+        </ul>
       </div>
-      <div class="footer_copyright">
-        <p>Copyright © 2020 Ailiv, Lieve Cortier. Alle rechten voorbehouden. – Grootmoers 3, 8730 Oedelem –
-          Ondernemingsnummer 0749.728.044</p>
-      </div>
-      <div class="footer_bottom">
-        <div class="footer_cookies">
-          <a href="https://ailiv.be/algemene-voorwaarden">Algemene voorwaarden</a>
-          <a href="">Beheercookies</a>
         </div>
-        <div class="footer_made"><p>Deze website werd met trots gemaakt door<a href="https://de-formatie.be/">  Artevelde student Nick Roofthooft</a></p>
-        </div>
+    </div>
+    <div class="footer_copyright">
+      <p>Copyright © 2020 Ailiv, Lieve Cortier. Alle rechten voorbehouden. – Grootmoers 3, 8730 Oedelem –
+        Ondernemingsnummer 0749.728.044</p>
+    </div>
+    <div class="footer_bottom">
+      <div class="footer_cookies">
+        <a href="https://ailiv.be/algemene-voorwaarden">Algemene voorwaarden</a>
+        <a href="">Beheercookies</a>
       </div>
-    </footer>
-        <script src="../static/js/data.js"></script>
-        <script src="../static/js/main.js"></script>
+      <div class="footer_made"><p>Deze website werd met trots gemaakt door<a href="https://de-formatie.be/">  Artevelde student Nick Roofthooft</a></p>
+      </div>
+    </div>
+  </footer>
+  <div class="flower-types_lineup" style="display: none;">
+  </div>
+  <div class="flower-Sizes_lineup" style="display: none;">
+  </div>
+    <script src="../static/js/data.js"></script>
+    <script src="../static/js/main.js"></script>
 </body>
 </html>

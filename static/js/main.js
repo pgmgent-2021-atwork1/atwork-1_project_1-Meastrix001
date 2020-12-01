@@ -17,11 +17,13 @@
       this.$dropDownMenuEvent = document.querySelector('.dropdownmenu')
       this.$flowerTypesLineUp = document.querySelector('.flower-types_lineup')
       this.$flowerSizesLineUp = document.querySelector('.flower-Sizes_lineup')
+      this.$flowerparams = document.querySelector('.js_params-flower')
     },
     buildUI() {
       console.log('building UI')
       this.$flowerTypesLineUp.innerHTML = this.createLineUpForFlowersTypes();
       this.$flowerSizesLineUp.innerHTML = this.createLineUpForFlowersSizes();
+      this.$flowerparams.innerHTML = this.createHTMLForflowerParams();
     },
 
     MenuClickEventlistener() {
@@ -49,13 +51,13 @@
     },
     createLineUpForFlowersSizes() {
       let tempStr = ''
-      flowerSizes.forEach(flower => {
+      flowerSizes.forEach((flower, index) => {
         tempStr += `
       
-       <div class="flowerinlineup">
+       <div class="flowerinlineup" id="fil${index}">
         <img src="${flower.image}"
          <div>
-          <p><a href="">${flower.title}</a> ${flower.price}</p>
+          <p><a href="${flower.href}">${flower.title}</a> ${flower.price}</p>
          </div>
         </div>
       
@@ -63,6 +65,27 @@
       });
       return tempStr;
     },
+    createHTMLForflowerParams() {
+      const search = window.location.search;
+      const params = new URLSearchParams(search);
+      const urlType = params.get('type')
+      if (urlType !== null) {
+        flowerSizes.forEach((it, index)  => {
+          if (it.type === urlType) {
+            this.$flowerparams.innerHTML = `
+            <img src="${it.image}">
+            <div class="flower-details">
+            <h2>${it.title}</h2>
+            <p>€${it.priceSolo}</p>
+            </div>
+            `
+            console.log(it.image)
+            console.log(it.title)
+          }
+        })
+       return this.$flowerparams.innerHTML
+      }
+    }
   }
   app.initialize();
 })();
