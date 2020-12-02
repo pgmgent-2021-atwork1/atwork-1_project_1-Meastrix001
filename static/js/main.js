@@ -3,10 +3,10 @@
   const app = {
     initialize() {
       console.log('Website Started')
-      this.indexChecker();
       this.cacheElements();
       this.buildUI();
       this.MenuClickEventlistener()
+      this.shoppingcart_menu();
     },
     indexChecker() {
 
@@ -15,6 +15,9 @@
       console.log('Elements Cached')
       this.$test_button = document.querySelector('.navigatemenu')
       this.$dropDownMenuEvent = document.querySelector('.dropdownmenu')
+      this.$shoppingCartButton = document.querySelector('.shoppingcart_menu')
+      this.$shoppingCartMenu = document.querySelector('.shoppingcartsidebar')
+      this.$shoppingCartExitButton = document.querySelector('.shoppingcartexit')
       this.$flowerTypesLineUp = document.querySelector('.flower-types_lineup')
       this.$flowerSizesLineUp = document.querySelector('.flower-Sizes_lineup')
       this.$flowerparams = document.querySelector('.js_params-flower')
@@ -30,11 +33,28 @@
       this.$test_button.addEventListener('click', (evt) => {
 
         let check = this.$dropDownMenuEvent
-        if (check.style.visibility === "visible") {
-          check.style.visibility = "hidden";
+        if (check.classList.contains('open')) {
+          check.classList.remove('open');
         } else {
-          check.style.visibility = "visible";
+          check.classList.add('open');
         }
+      })
+    },
+    shoppingcart_menu() {
+        this.$shoppingCartButton.addEventListener('click', (evt) => {
+
+        let cart = this.$shoppingCartMenu
+        if (cart.classList.contains('open')) {
+          cart.classList.remove('open');
+        } else {
+          cart.classList.add('open');
+        }
+        this.$shoppingCartExitButton.addEventListener('click', (evt) => {
+          let exit = this.$shoppingCartMenu
+          if (exit.classList.contains('open')) {
+            exit.classList.remove('open')
+          }  
+        })
       })
     },
     createLineUpForFlowersTypes() {
@@ -73,7 +93,9 @@
         flowerSizes.forEach((it, index)  => {
           if (it.type === urlType) {
             this.$flowerparams.innerHTML = `
+            <div id=fil${index}>
             <img src="${it.image}">
+            </div>
             <div class="flower-details">
             <h2>${it.title}</h2>
             <p>€${it.priceSolo}</p>

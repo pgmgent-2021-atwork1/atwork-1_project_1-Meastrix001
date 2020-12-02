@@ -3,22 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet"  href="../../static/css/main.css">
+  <link rel="stylesheet"  href="css/main.css">
   <title>ailiv</title>
 </head>
 <body> 
+  <div class="shoppingcartsidebar">
+    <div class="shoppingcartitems">
+      <div class="shoppingcart-tophalf">
+        <button class="shoppingcartexit">X</button>
+        <h2>Uw winkelmandje</h2>
+      </div>
+      <div class="shoppingitemsincart">
+        <div class="shopping-item">
+          <img class="details-img"src="media/flower-size1.jpeg">
+          <div class="shopping-item_details">
+            <h5>Boeket small</h5>
+            <p>€30</p>
+            <p>Kleur: Geen kueze gemaakt</p>
+            <p>Vaas Bijbestellen: Geen kueze Gemaakt</p>
+            <p>Bindwijze: Geen keuze gemaakt</p>
+            <button class="details-delete">verwijderen</button>  
+          </div>
+          
+          <div>
+            <input class="details-amount" type="number" value="1" min="1">
+          </div>
+        </div>
+        <div class="shopping-item">
+          <img class="details-img"src="media/flower-size-medium.jpeg">
+          <div class="shopping-item_details">
+            <h5>Boeket medium</h5>
+            <p>€42</p>
+            <p>Kleur: Geen kueze gemaakt</p>
+            <p>Vaas Bijbestellen: Geen kueze Gemaakt</p>
+            <p>Bindwijze: Geen keuze gemaakt</p>
+            <button class="details-delete">verwijderen</button>  
+          </div>
+          
+          <div>
+            <input class="details-amount" type="number" value="1" min="1">
+          </div>
+        </div>
+        <div class="shopping-item">
+          <img class="details-img"src="media/flower-size-large.jpeg">
+          <div class="shopping-item_details">
+            <h5>Boeket large</h5>
+            <p>€50</p>
+            <p>Kleur: gemengd</p>
+            <p>Vaas Bijbestellen: nee </p>
+            <p>Bindwijze: kortgebonden stelen</p>
+            <button class="details-delete">verwijderen</button>  
+          </div>
+          <div>
+            <input class="details-amount" type="number" value="1" min="1">
+          </div>
+        </div>
+        <div class="shopping-item">
+          <img class="details-img"src="media/flower-size-large.jpeg">
+          <div class="shopping-item_details">
+            <h5>Boeket large</h5>
+            <p>€50</p>
+            <p>Kleur: wit</p>
+            <p>Vaas Bijbestellen: Geen kueze Gemaakt</p>
+            <p>Bindwijze: langgebonden stelen</p>
+            <button class="details-delete">verwijderen</button>  
+          </div>
+          
+          <div>
+            <input class="details-amount" type="number" value="1" min="1">
+          </div>
+        </div>
+      </div>
+      <div class="shoppingcheckout">
+        <div class="shopping-total">
+          <p>Subtotal</p><p class="totalprice"></p>
+        </div>
+        
+        <a href="checkout.html"><button class="shopping-go-to-pay">naar betalen</button></a>
+      </div>
+    </div>
+  </div>
   <section class="webwrapper">
     <div class="header_contact">
       <ul class="header_contact_list">
         <li>GSM<a href="tel:+32474992345"> 0474 99 23 45</a></li>
         <li>EMAIL<a href="mailto:lievecortier@ailiv.be"> LIEVECORTIER@AILIV.BE</a></li>
-        <li>FACEBOOK<a href="https://www.facebook.com/aillivbloemen"></a></li>
-        <li>CONTACT<a href="https://ailiv.be/contact"></a></li>
+        <li><a href="https://www.facebook.com/aillivbloemen">FACEBOOK</a></li>
+        <li><a href="https://ailiv.be/contact">CONTACT</a></li>
       </ul>
     </div>
     <nav>
       <div class="header_nav">
-        <svg class="ailivlogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153 147.426">
+        <a href="index.html"><svg class="ailivlogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153 147.426">
           <g id="Group_1" data-name="Group 1">
             <path id="Path_1" data-name="Path 1"
               d="M31.441,45.614c4.487-11.5,9.422-23.97,16.377-34.114A81.247,81.247,0,0,0,25.533,26.753C11.1,40.654,2.8,58.839,2.8,76.572V78.15c2.617-.15,5.309-.3,8-.526C19.925,75.069,25.234,61.393,31.441,45.614Z"
@@ -176,22 +252,23 @@
               d="M157.747,80.381a3.82,3.82,0,0,1,1.721-.9h.6V77.226h-9.8v.751l-.075.677a.743.743,0,0,0,.224.6l.3.151h.224a4.252,4.252,0,0,1,2.468.6.762.762,0,0,1,.149.376v.3a3.784,3.784,0,0,1-.149.9l-.075.076v.075l-.224.677L150.494,89.1l-.822,2.1-1.124,2.856-1.27-2.931-.9-2.18-3.289-7.739-.149-.15v-.149a2.343,2.343,0,0,1-.149-.6c0-.149,0-.226.075-.226a3.209,3.209,0,0,1,2.542-.826h.822V77H131.5v2.254h.822a1.115,1.115,0,0,1,.526.075c.075,0,.149,0,.149.076a2.712,2.712,0,0,1,.672.524l.149.151c0,.076.149.226.374.451a4.479,4.479,0,0,1,.674,1.353l2.99,7.062.9,2.1,3.742,8.791,2.616,6.087h1.944L152.738,91.2l.075-.225.747-1.953.075-.3,2.542-6.536C156.851,81.583,157.224,80.832,157.747,80.381Z"
               transform="translate(-33.164 -19.142)" fill="#003504" />
           </g>
-        </svg>
+        </svg></a>
         <section>
           <div class="dropdownmenu">
             <ul class="dropdownmenu_list">
-              <li><a href="../../index.html">Home</a></li>
-              <li><a href="index.html">Gepersonaliseerd Bloemwerk</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="gepblo.html">Gepersonaliseerd Bloemwerk</a></li>
               <li><a href="">TrouwBoeketten</a></li>
-              <li><a href="../seizoensdecoratie/index.html">Seizoensdecoratie</a></li>
+              <li><a href="sezdec.html">Seizoensdecoratie</a></li>
               <li><a href="">Rouwwerk</a></li>
               <li><a href="">Aankleding</a></li>
-              <li><a href="../../webshop/index.html">WebShop</a></li>
+              <li> <a href="webshop.html">WebShop</a></li>
             </ul>
           </div>
         </section>
         <div class="shoppingcart">
-          <p>Winkelmandje  <span class="shoppingcart_counter">0</span></p><svg class="navigatemenu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85.04 85.04">
+          <p class="shoppingcart_menu">Winkelmandje <span class="shoppingcart_counter">0</span></p>
+          <svg class="navigatemenu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85.04 85.04">
             <defs>
               <style>
                 .cls-1 {
@@ -205,15 +282,16 @@
               <path class="cls-1" d="M65.8,70H19.24a2.84,2.84,0,0,1,0-5.67H65.8a2.84,2.84,0,0,1,0,5.67Z" />
             </g>
           </svg>
+
         </div>
       </div>
     </nav>
     <section class="custom-flowers_gepblo">
-      <img src="https://uploads-ssl.webflow.com/5f5248796f0e6e75b273d0e2/5f5b8024ced880280e44b5b7_bloemwerkopmaat.jpg">
+      <img src="media/gepblo-banner.jpg">
       <div class="discover-flowers_gepblo">
         <div class="discover-flowers_textingepblo">
-          <h2>Bloemen voor elk seizoen</h2>
-          <p>Seizoensgebonden decoratie bij u thuis of in uw zaak</p>
+          <h2>Bloemen à la carte</h2>
+          <p>Ben je op zoek naar een bloemstuk gemaakt voor een speciale gelegenheid? Een bloemstuk op basis van een mooie vaas of decoratiestuk? Ik help je graag verder!</p>
         </div>
       </div>
     </section>
@@ -227,16 +305,17 @@
           <p>Bekijk enkele referentiefotos</p>
         </div>
           <div class="gepblo-examples_images">
-            <img src="../../static/media/examples-1.png">
-            <img src="../../static/media/examples-2.png">
-            <img src="../../static/media/examples-3.png">
-            <img src="../../static/media/examples-4.png">
+            <img src="media/examples-1.png">
+            <img src="media/examples-2.png">
+            <img src="media/examples-3.png">
+            <img src="media/examples-4.png">
           </div>
         </div>
         <section class="gepblo-intressted">
           <h2>Intresse in gepersonaliseerd bloemwerk?</h2>
           <p>Stuur me gerust een bericht</p>
           <div class="gepblo-contactform">
+            <form class="gepblo-contactform_form">
             <div class="gepblo-contactform_input">
               <h2>Contactformulier</h2>
              <label for="naam">UW NAAM</label>
@@ -251,6 +330,7 @@
              <input type="text" id="text" maxlength="256" required>
              <input type="submit" value="verzenden">
             </div>
+            </form>
             <div class="gepblo-contactform_text">
               <h2>Rechtstreeks contact</h2>
               <p>Je kan me ook rechtstreeks contacteren op <a href="tel:+32474992345"> 0474 99 23 45</a></p>
@@ -265,7 +345,7 @@
           </div>
           <div class="webshop-order_perks">
             <div class="webshop_position">
-              <img src="../../static/media/green-circle.svg">
+              <img src="media/green-circle.svg">
               <ul class="webshop-order_info">
                 <li>🗓 Bestellen voor donderdag 16 u</li>
                 <li>🚗 Gratis thuislevering in Beernem</li>
@@ -277,21 +357,17 @@
         </div>
         <div class="flower-Sizes_lineup">
         </div>
+        </section>
         <footer class="footer">
           <div class="footer_top">
             <div class="footer_top-half">
               <div class="footer_navigate">
                 <ul class="footer_navigate_list">
-                  <li><a href="dienst/gepersonaliseerd-bloemwerk/index.html">Gepersonaliseerd Bloemwerk</a></li>
-                  <p class="footer-dash">-</p>
-                  <li><a href="dienst/seizoensdecoratie/index.html">Seizonesdecoratie</a></li>
-                  <p class="footer-dash">-</p>
+                  <li><a href="gepblo.html">Gepersonaliseerd Bloemwerk</a></li>
+                  <li><a href="sezdec.html">Seizonesdecoratie</a></li>
                   <li><a href="">Rouwwerk op maat</a></li>
-                  <p class="footer-dash">-</p>
                   <li><a href="">Aankleding op locatie</a></li>
-                  <p class="footer-dash">-</p>
                   <li><a href="index.html">WebShop</a></li>
-                  <p class="footer-dash">-</p>
                   <li><a href="">Contact</a></li>
                 </ul>
               </div>
@@ -316,9 +392,13 @@
             </div>
           </div>
         </footer>
+        <div>
   <div class="flower-types_lineup" style="display: none;">
   </div>
-        <script src="../../static/js/data.js"></script>
-        <script src="../../static/js/main.js"></script>
+  <div class="js_params-flower"  style="display: none;" >
+  </div>
+        </div>
+        <script src="js/data.js"></script>
+        <script src="js/main.js"></script>
 </body>
 </html>
