@@ -72,14 +72,13 @@ a {
   display: flex;
   position: relative;
   margin-bottom: 2rem;
-
 }
-
 .ailivlogo {
   margin-top: 1rem;
   width: 70px;
   margin-left: 1.5rem;
   z-index: 2;
+  top: 0;
 }
 
 .shoppingcartsidebar {
@@ -266,6 +265,9 @@ a {
   margin-top: 1.25rem;
   z-index: 2;
 }
+.header_contact_list  li a{
+  margin-left: 2px;
+}
 
 /* dropdown menu */
 .dropdownmenu {
@@ -306,6 +308,10 @@ a {
 .dropdownmenu_list a {
   text-decoration: none;
   color: #009e29;
+}
+.dropdownmenu_list a:active{
+  color: black;
+
 }
 
 /* below the navbar */
@@ -672,6 +678,7 @@ footer {
   line-height: 1.7rem;
   text-decoration: none;
   transition: 0.25s;
+  margin-right: 4px;
 }
 
 .footer_cookies a:hover {
@@ -900,6 +907,7 @@ footer {
   flex-direction: column;
   align-items: center;
   margin-bottom: 4rem;
+  height: fit-content;
 }
 
 .sezdec-block img {
@@ -1050,8 +1058,7 @@ footer {
   width: 90%;
   max-width: 56rem;
   margin: auto;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding: 2rem 3rem 
 }
 
 .details-devider {
@@ -1149,6 +1156,17 @@ footer {
   margin: auto;
   margin-bottom: 4rem;
 }
+.checkout-sub-total,
+.checkout-total{
+border-bottom:  2px dotted black;
+border-bottom-left-radius: 1rem;
+}
+.checkout-sub-total p,
+.checkout-total p {
+  margin-left: 1rem;
+  margin-bottom: 0;
+}
+
 
 /* -------------------------------------------- */
 /* Media querries */
@@ -1202,7 +1220,7 @@ footer {
 @media (min-width: 47rem) {
   .sub-title_text {
     height: fit-content;
-    max-height: 37rem;
+    max-height: 42;
     display: flex;
     flex-direction: row-reverse;
     margin-top: 1.5rem;
@@ -1575,6 +1593,7 @@ footer {
     margin-left: 1rem;
   }
 
+
   .navigatemenu {
     display: none;
   }
@@ -1609,7 +1628,7 @@ footer {
 
   .gepblo-examples_images img {
     width: 24%;
-    height: 24%;
+    height: 20rem;
   }
 
   .gepblo-intressted p {
@@ -1642,5 +1661,9 @@ footer {
   .footer_cookies {
     margin-right: 40rem;
     flex-direction: row;
+  }
+  .ailivlogo{
+    height: 130px;
+    width: 130px
   }
 }

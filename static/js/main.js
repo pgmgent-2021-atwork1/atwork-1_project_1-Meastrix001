@@ -8,9 +8,9 @@
       this.MenuClickEventlistener()
       this.shoppingcart_menu();
     },
-    indexChecker() {
+  
 
-    },
+    // },
     cacheElements() {
       console.log('Elements Cached')
       this.$test_button = document.querySelector('.navigatemenu')
@@ -24,12 +24,16 @@
     },
     buildUI() {
       console.log('building UI')
-      this.$flowerTypesLineUp.innerHTML = this.createLineUpForFlowersTypes();
+      if (this.$flowerSizesLineUp) {       
       this.$flowerSizesLineUp.innerHTML = this.createLineUpForFlowersSizes();
-      this.$flowerparams.innerHTML = this.createHTMLForflowerParams();
+      } if (this.$flowerTypesLineUp) {
+      this.$flowerTypesLineUp.innerHTML = this.createLineUpForFlowersTypes();
+      } if (this.$flowerparams) {
+        this.$flowerparams.innerHTML = this.createHTMLForflowerParams();
+      }
     },
-
     MenuClickEventlistener() {
+      console.log('Starting hamburgermenu')
       this.$test_button.addEventListener('click', (evt) => {
 
         let check = this.$dropDownMenuEvent
@@ -39,8 +43,10 @@
           check.classList.add('open');
         }
       })
+      console.log('Started hamburgermenu')
     },
     shoppingcart_menu() {
+      console.log('Starting shoppingcart')
         this.$shoppingCartButton.addEventListener('click', (evt) => {
 
         let cart = this.$shoppingCartMenu
@@ -56,6 +62,7 @@
           }  
         })
       })
+      console.log('Started shoppingcart')
     },
     createLineUpForFlowersTypes() {
       let tempStr = ''
@@ -103,10 +110,21 @@
             `
             console.log(it.image)
             console.log(it.title)
+            // this.$addButtonID = document.getElementById('submit')
+            // this.$addButtonID.innerHTML += `<a href="${it.href}"><a>`
           }
         })
        return this.$flowerparams.innerHTML
       }
+      else {
+        this.$flowerparams.innerHTML =
+         `
+       <div class="flower-details-error">
+       <h2>Type bloem niet gevonden...</h2>
+       <p>Bloem details niet gevonden</p>
+       `
+     }
+     return this.$flowerparams.innerHTML 
     }
   }
   app.initialize();
